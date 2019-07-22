@@ -1,0 +1,41 @@
+@import "../mixins/colors";
+
+.addition {
+    height: 204px;
+    margin-bottom: 20px;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.addition__table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: lighten($light-grey, 10%);
+
+    td {
+        padding: 10px 5px;
+        border-style: solid;
+        border-width: 0px;
+        overflow: hidden;
+        word-break: normal;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+        border-color: lighten($light-grey, 10%);
+        color: $dark-grey;
+        background-color: white;
+        text-align: left;
+        font-size: 10px;
+    }
+}
+
+.addition__header {
+    background-color: $table-bg;
+    color: $dark-grey;
+    text-align: left;
+    font-size: 9px;
+    height: 25px;
+
+    th:not(:last-child) {
+        padding-right: 5px;
+    }
+}
