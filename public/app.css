@@ -152,7 +152,10 @@ button {
 
 .cards__content {
   padding: 0 20px 20px;
-  width: 230px; }
+  width: 250px; }
+  @media (min-width: 1025px) {
+    .cards__content {
+      width: 100%; } }
 
 .count {
   display: -webkit-box;
